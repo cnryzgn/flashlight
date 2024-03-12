@@ -1,0 +1,75 @@
+.flashlight {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: inset 255px 255px 100px #fff,
+    0 0 5px #fff,
+    0 0 100px #eee;
+    overflow: hidden;
+    z-index: 2;
+    animation: opening .250s linear forwards;
+    animation: open 5.250s linear infinite;
+}
+
+@keyframes opening {
+    0% {
+        box-shadow: inset 100px 100px 100px #fff;
+    }
+
+    100% {
+        box-shadow: inset 255px 255px 100px #fff,
+        0 0 5px #fff,
+        0 0 100px #eee;
+    }
+}
+
+@keyframes open {
+    0% {
+        box-shadow: inset 255px 255px 100px #fff,
+        0 0 5px #fff,
+        0 0 150px #eee;
+    }
+
+    50% {
+        box-shadow: inset 255px 255px 100px #fff,
+        0 0 5px #fff,
+        0 0 75px #eee;
+    }
+
+    100% {
+        box-shadow: inset 255px 255px 100px #fff,
+        0 0 5px #fff,
+        0 0 150px #eee;
+    }
+}
+
+.flashlight-open {
+    display: inline-block;
+}
+
+.flashlight-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.flashlight-info {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #eee;
+    text-shadow: 2px 2px 1px #fff;
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

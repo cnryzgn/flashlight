@@ -1,0 +1,67 @@
+@import url('flashlight.css');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Esteban&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: none;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 35px;
+    z-index: 99999;
+    display: grid;
+    place-content: center;
+}
+
+.container h1 {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+}
+
+.container span:not(#book) {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.container b {
+    display: inline-block;
+    margin-top:  15px;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 1120px) {
+    .container {
+        display: block;
+    }
+
+    .container h1 {
+        width: 90%;
+        display: block;        
+        margin: 70px 5px;
+    }
+
+    .container b {
+        width: 100%;
+        margin-top: 7vh;
+        padding-left: 10px;
+    }
+
+    .container #book {
+        display: block;
+        padding-left: 30px;
+    }
+}
