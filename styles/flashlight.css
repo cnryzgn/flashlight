@@ -12,8 +12,7 @@
     0 0 100px #eee;
     overflow: hidden;
     z-index: 2;
-    animation: opening .250s linear forwards;
-    animation: open 5.250s linear infinite;
+    animation: opening .250s linear forwards, open 5.250s linear infinite;
 }
 
 @keyframes opening {
@@ -67,7 +66,6 @@
     text-align: center;
     font-size: 3rem;
     color: #eee;
-    text-shadow: 2px 2px 1px #fff;
     position: fixed;
     top: 90px;
     left: 50%;

@@ -35,7 +35,7 @@
 
 .container b {
     display: inline-block;
-    margin-top:  15px;
+    margin-top: 15px;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
@@ -50,11 +50,12 @@
 
     .container h1 {
         width: 90%;
-        display: block;        
-        margin: 70px 5px;
+        display: block;
+        margin: 150px 5px;
     }
 
     .container b {
+        display: block;
         width: 100%;
         margin-top: 7vh;
         padding-left: 10px;
@@ -63,5 +64,6 @@
     .container #book {
         display: block;
         padding-left: 30px;
+        padding-bottom: 10vh;
     }
 }
